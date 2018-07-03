@@ -36,39 +36,6 @@ const getUsers = function(page = 1){
                 buttonLoadMore.removeAttribute('disabled');
             }
             updateView(responseData.data);
-            // (function(){
-            //     let dataArray = responseData.data;
-            //     const displayElement = document.getElementById('users-display-wrapper');
-            //     // if(dataArray.length){
-            //     for (let i = 0; i <= dataArray.length; i++){
-            //         const dataObject = dataArray[i];
-            //         console.log(dataObject);
-            //         const newCard = [
-            //         '<div class="col-xs-12 col-md-4 mx-auto" style="margin-bottom: 20px;">',
-            //         '<div class="card" id="',
-            //         dataObject.id,
-            //         '">',
-            //         '<img class="card-img-top" src="',
-            //         dataObject.avatar,
-            //         '" alt="Avatar">',
-            //         '<div class="card-body">',
-            //         '<p class="card-text">',
-            //         '<h5>First Name = ',
-            //         dataObject.first_name,
-            //         '</h5>',
-            //         '<h5>Last Name = ',
-            //         dataObject.last_name,
-            //         '</h5>',
-            //         '</p>',
-            //         '</div>',
-            //         '</div>',
-            //         '</div>',
-            //         ];
-            
-            //         displayElement.innerHTML += newCard.join('');
-            //     }
-            // // }
-            // })();
         });
     }, function(){
         console.log('getUsers unsuccessful');
@@ -88,8 +55,8 @@ const updateView = function(dataArray){
         var dataObject = dataArray[i];
         console.log(dataObject);
         const newCard = [
-        '<div class="col-xs-12 col-md-4 mx-auto" style="margin-bottom: 20px;">',
-        '<div class="card" id="',
+        '<div class="col-xs-12 col-md-4" style="margin-bottom: 20px; display:flex;">',
+        '<div class="card" id=" style="align-self:stretched;"',
         dataObject.id,
         '">',
         '<img class="card-img-top" src="',

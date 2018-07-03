@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -26,10 +26,10 @@
   <nav class="navbar navbar-dark bg-dark">
       <!-- Navbar content -->
       <span class="navbar-brand mb-0 h1">Service Workers</span>
-      <form class="form-inline">
+      <!-- <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form> -->
   </nav>
   
   <div class="container-fluid content-wrapper">
@@ -57,25 +57,31 @@
           </div>
           
           <div class="col-12 bottom-margin-after-row" >
-            <div class="row" id="users-display-wrapper">
+            <div class="row" id="users-display-wrapper" style="display:flex; align-items: stretch;">
 
             </div>
           </div>
           
-          <div class="col-12 bottom-margin-after-row">
+          <div class="col-12 bottom-margin-after-row child-centered">
             <button type="button" class="btn btn-primary" id="load-more-button" onclick="loadMore()">Load More</button>
           </div>
         </div>
       </div>
       
-      <div class="col-md-3">
+      <div class="col-md-3 d-none d-md-flex">
         <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
+            <div class="card-header">Information</div>
             <div class="card-body">
-              <h5 class="card-title">Info card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Objectives:</h5>
+              <p class="card-text"><ul>
+                <li>To understand how service workers work. How we can control static and dynamic content.</li>
+                <li>Research on performance with or without service workers.</li>
+                <li>Use newly available replacement of XHR that is fetch() Interface.</li>
+                <li>Bootstrap-4, Newly available standard. Get used to newly available components.</li>
+                <li>Flex-box, Newly available standard, Get used to it and see how it can be used with bootstrap.</li>
+              </ul>.</p>
             </div>
-          </div>
+          </div>        
       </div>
     </div>
   </div>
